@@ -3,10 +3,10 @@
   "name": "to-do-list",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "nodemon index.js",
     "start:dev": "node ./build/main.js",
     "build": "webpack --config webpack.config.js --mode production",
     "predeploy": "npm run build",
