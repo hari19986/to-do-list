@@ -55,7 +55,7 @@ app.get("/", function (req, res) {
           });
         res.redirect("/");
       } else {
-        res.render("list", { listTitle: "Today", newItemList: response });
+        res.send({ listTitle: "Today", newItemList: response });
       }
     })
     .catch((err) => {
@@ -130,7 +130,7 @@ app.get("/:customListName", function (req, res) {
             console.log(err);
           });
       } else {
-        res.render("list", {
+        res.send({
           listTitle: response.name,
           newItemList: response.items,
         });
